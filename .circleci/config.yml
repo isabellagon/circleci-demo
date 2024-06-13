@@ -23,8 +23,6 @@ workflows:
       - test:
           requires:
             - build
-          requires:
-            - test
       - deploy:
           requires:
             - test
